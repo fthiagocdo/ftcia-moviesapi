@@ -13,11 +13,19 @@ public class Search {
     public Search() { 
     }
 
+    
+    /** 
+     * @return List<Movie>
+     */
     @JsonProperty("Search")
     public List<Movie> getSearch() {
         return search;
     }
 
+    
+    /** 
+     * @param search
+     */
     public void setSearch(List<Movie> search) {
         this.search = search;
     }

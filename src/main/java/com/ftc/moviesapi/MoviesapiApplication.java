@@ -11,10 +11,18 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class MoviesapiApplication {
 
+
+	/** 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(MoviesapiApplication.class, args);
 	}
 
+	
+	/** 
+	 * @return RestTemplate
+	 */
 	@Bean
 	public RestTemplate getRestTemplate() {
 		RestTemplate restTemplate = new RestTemplate();

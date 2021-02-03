@@ -1,6 +1,7 @@
 package com.ftc.moviesapi.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Movie {
@@ -15,6 +16,7 @@ public class Movie {
       return title;
   }
 
+  @JsonProperty("Title")
   public void setTitle(String title) {
       this.title = title;
   }
@@ -23,6 +25,7 @@ public class Movie {
     return year;
   }
 
+  @JsonProperty("Year")
   public void setYear(int year) {
     this.year = year;
   }

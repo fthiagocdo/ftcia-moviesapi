@@ -1,13 +1,15 @@
 package com.ftc.moviesapi.controller;
 
+import java.util.List;
+
+import com.ftc.moviesapi.entity.Movie;
 import com.ftc.moviesapi.entity.MovieDetail;
-import com.ftc.moviesapi.entity.Search;
 
 import org.springframework.http.ResponseEntity;
 
 public interface MovieController {
 
-    ResponseEntity<Search> searchByName(String name);
+    ResponseEntity<List<Movie>> searchByName(String name);
     
     ResponseEntity<MovieDetail> searchById(String id);
 }

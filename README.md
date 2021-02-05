@@ -14,7 +14,8 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 Descrevo a execução dos passos utilizando o Visual Studio Code com o plugin Spring Initializr Java Support:
 
-[Visual Studio Code](https://code.visualstudio.com/) e [Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr)
+[Visual Studio Code](https://code.visualstudio.com/)
+[Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr)
 
 Caso utilize outro editor, os passos podem ser diferentes.
 

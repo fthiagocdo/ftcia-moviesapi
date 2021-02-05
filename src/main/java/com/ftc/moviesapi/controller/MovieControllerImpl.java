@@ -1,5 +1,6 @@
 package com.ftc.moviesapi.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.ftc.moviesapi.entity.Movie;
@@ -38,7 +39,7 @@ public class MovieControllerImpl implements MovieController {
         if (response.getBody() != null && response.getBody().getSearch() != null) {
             return new ResponseEntity<List<Movie>>(response.getBody().getSearch(), HttpStatus.OK);
         } else {
-            return new ResponseEntity<List<Movie>>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<List<Movie>>(new ArrayList<>(), HttpStatus.OK);
         }
     }
 
